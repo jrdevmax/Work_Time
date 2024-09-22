@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estylo.css">
+    <title>Valor de Hora Trabalhada</title>
+</head>
+<body>
+    <section class="info">
+        <h1 class="color">Valor de 1 Hora trabalhada </h1>
+        <p class="color">Se você trabalha de Seg á Sex 8h pordia marque 40h<br>
+        Se você trabalha de Seg á Sex mais no sabado 4h pordia 
+        marque 44h</p>
+    
+    </section>
+   <section>
+    <img class="image" src="img/dt.png">
+    <form action="" method="post">
+        Informe seu Salario: <br>
+            <input type="text" name="salario" autocomplete="off"><br>
+        Informe horas semanais :<br>
+        <input type="radio" name="op" value="1"> 40h
+        <input type="radio" name="op" value="2"> 44h<br><br>
+            <input class="bt" type="submit" value="Calcular"><br><br>
+    </form>
+
+  
+   </section>
+   <section>
+        <table>
+            <tr>
+                <th>Salario</th>
+                <th>Valor Hora_trabalhada</th>
+            </tr>
+            <tr>
+                <td>
+                  <?php include "calc.php" ;?>
+                </td>
+            </tr>
+       </table>
+   </section>
+</body>
+</html>
